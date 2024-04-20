@@ -1,0 +1,58 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-img-container {
+        width: 45%;
+        padding-block: .4rem;
+        padding-left: 1rem;
+    }
+}
+
+.menu-btn {
+    background-color: #2A4759;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding-inline: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1rem;
+
+    .menu-bars {
+        padding-right: .5rem;
+    }
+}
+
+input[type="checkbox"]:checked + .sidenav {
+    margin-left: 0;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.sidenav {
+    position: absolute;
+    top: 120px;
+    height: 100vh;
+    margin-left: -300px;
+    transition: .2s ease-in;
+
+
+    .sidenav-li {
+    border-top: 1px solid lightgrey;
+    padding-inline: 1rem 4rem;
+    padding-block: .6rem;
+    text-transform: uppercase;
+
+    &:first-of-type {
+        border-top: none;
+    }
+
+        a {
+            color: black
+        }
+    }
+}
